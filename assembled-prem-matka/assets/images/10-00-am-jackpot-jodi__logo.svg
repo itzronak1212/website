@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="72" viewBox="0 0 240 72">
+  <rect width="240" height="72" rx="14" fill="#fff7e5"/>
+  <circle cx="36" cy="36" r="28" fill="#fab028"/>
+  <text x="36" y="43" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#282832">PM</text>
+  <text x="78" y="31" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#282832">Prem</text>
+  <text x="78" y="56" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#282832">Matka</text>
+</svg>
