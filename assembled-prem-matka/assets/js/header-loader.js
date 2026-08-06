@@ -16,6 +16,10 @@
     return window.location.pathname.split('/').pop() || 'index.html';
   }
 
+  function isHomeHref(href) {
+    return href === '/' || href === 'index.html';
+  }
+
   function createSequenceMap() {
     var groups = [
       {
@@ -182,14 +186,14 @@
         var href = link.getAttribute('href');
         if (!href) return;
 
-        if (href === currentPage) {
+        if (href === currentPage || (currentPage === 'index.html' && isHomeHref(href))) {
           var navItem = link.closest('.nav-item');
           if (navItem) navItem.classList.add('active');
         }
       });
 
       if (currentPage === 'index.html') {
-        var homeLink = headerHost.querySelector('.nav-link[href="index.html"]');
+        var homeLink = headerHost.querySelector('.nav-link[href="/"], .nav-link[href="index.html"]');
         if (homeLink && homeLink.parentElement) homeLink.parentElement.classList.add('active');
       }
 
